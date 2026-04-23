@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Recipes</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=ranade@300,400,500,700,300i,400i,500i,700i&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Family Recipes</h1>
+    </div>
+  </header>
+
+  <!-- Sticky Nav -->
+  <nav class="category-nav" id="categoryNav">
+    <div class="nav-inner">
+      <button class="nav-tab active" data-category="all">All</button>
+      <button class="nav-tab" data-category="starters">Starters</button>
+      <button class="nav-tab" data-category="mains">Mains</button>
+      <button class="nav-tab" data-category="sides">Sides</button>
+      <button class="nav-tab" data-category="desserts">Desserts</button>
+      <button class="nav-tab" data-category="drinks">Drinks</button>
+      <button class="nav-tab" data-category="breakfast">Breakfast</button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Featured Recipe -->
+    <section class="featured-section" id="featuredSection">
+      <div class="featured-label">— featured recipe —</div>
+      <div class="featured-card">
+        <div class="featured-image-wrap" style="aspect-ratio: 3/4;">
+          <img class="featured-image" src="images/Belizean Fish.jpg" alt="Belizean BBQ Fish" />
+        </div>
+        <div class="featured-info">
+          <span class="recipe-category-badge">Mains</span>
+          <h2 class="featured-title">Belizean BBQ Fish</h2>
+          <p class="featured-desc">Although this dish will never taste as good as it does on a secret beach after a long morning of fishing and sun, this at-home version can scratch the itch. Serve it with tortillas and a rum punch and it gets close.</p>
+          <div class="recipe-meta">
+            <span>Serves 4–6</span>
+            <span class="meta-dot">·</span>
+            <span>1 hr</span>
+            <span class="meta-dot">·</span>
+            <span style="font-style: italic; color: var(--warm-gray);">by Tino Gonzales, adapted by Sydney</span>
+          </div>
+          <a href="recipes/belizean-bbq-fish.html" class="view-recipe-btn">View Recipe →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Recipe Grid -->
+    <section class="recipes-section">
+      <div class="recipes-grid" id="recipesGrid">
+
+        <!-- ================================
+             WITH PHOTOS FIRST
+        ================================= -->
+
+        <article class="recipe-card" data-category="mains">
+          <a href="recipes/peruvian-chicken.html" class="card-link">
+            <div class="card-image-wrap">
+              <img class="card-image" src="images/Peruvian Chicken.png" alt="Ginny's Peruvian Chicken" />
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">Ginny's Peruvian Chicken</h3>
+              <p class="card-by">by Ginny</p>
+              <p class="card-desc">A beautifully spiced whole chicken marinated overnight in lime, cumin, and garlic. Best on the Weber Grill. Always serve with the jalapeño-cilantro green sauce.</p>
+              <div class="recipe-meta">
+                <span>Serves 4</span>
+                <span class="meta-dot">·</span>
+                <span>2 hrs + overnight</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="mains">
+          <a href="recipes/roasted-chicken-clementines-arak.html" class="card-link">
+            <div class="card-image-wrap">
+              <img class="card-image" src="images/roasted chicken with clementines.png" alt="Roasted Chicken with Clementines &amp; Arak" />
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">Roasted Chicken with Clementines & Arak</h3>
+              <p class="card-by">by Yotam Ottolenghi — introduced by Ginny, made a staple by André</p>
+              <p class="card-desc">Arak, mustard, fennel, and caramelized clementine skins come together in a sweetly comforting roast. Serve with rice or bulgar.</p>
+              <div class="card-meta">
+                <span>Serves 4</span>
+                <span>~1 hr</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="desserts">
+          <a href="recipes/zebra-cake.html" class="card-link">
+            <div class="card-image-wrap">
+              <img class="card-image" src="images/zebra cake.png" alt="Zebra Cake" />
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Desserts</span>
+              <h3 class="card-title">Zebra Cake</h3>
+              <p class="card-desc">Chocolate wafer cookies layered with vanilla whipped cream, refrigerated overnight. The magic is in the diagonal slice. A classic for a reason.</p>
+              <div class="recipe-meta">
+                <span>Serves 6</span>
+                <span class="meta-dot">·</span>
+                <span>8 hrs 20 min</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- ================================
+             LINKED RECIPES (NO PHOTO YET)
+        ================================= -->
+
+        <article class="recipe-card" data-category="starters">
+          <a href="recipes/tortilla-soup.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Starters</span>
+              <h3 class="card-title">Tortilla Soup</h3>
+              <p class="card-by">by Rosewood Mansion on Turtle Creek</p>
+              <p class="card-desc">A deeply rich soup — the secret is sautéing the tortillas right in the pot so they dissolve into the broth. Garnish generously with chicken, avocado, and crispy strips.</p>
+              <div class="recipe-meta">
+                <span>Serves 4</span>
+                <span class="meta-dot">·</span>
+                <span>2 hrs</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="mains">
+          <a href="recipes/schnitzel.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">Schnitzel</h3>
+              <p class="card-desc">Pounded thin, breaded just right, fried until the crust shatters. Serve with a lemon wedge and nothing else needs to happen.</p>
+              <div class="card-meta">
+                <span>Serves 4</span>
+                <span>~35 min</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="mains">
+          <a href="recipes/yoshida-bbq-salmon.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">Yoshida BBQ Salmon</h3>
+              <p class="card-desc">Yoshida's sweet-savory marinade caramelizes beautifully on the grill or in the oven. Quick, reliable, and always a hit.</p>
+              <div class="card-meta">
+                <span>Serves 4</span>
+                <span>~45 min</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="desserts">
+          <a href="recipes/key-lime-pie.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Desserts</span>
+              <h3 class="card-title">Key Lime Pie</h3>
+              <p class="card-desc">Three ingredients into a graham cracker crust, barely baked. Deceptively simple and the kind of pie that disappears before dinner is over.</p>
+              <div class="recipe-meta">
+                <span>Serves 8</span>
+                <span class="meta-dot">·</span>
+                <span>1 hr 20 min</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="drinks">
+          <a href="recipes/margaritas.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Drinks</span>
+              <h3 class="card-title">Margaritas</h3>
+              <p class="card-by">by Jennifer Segal</p>
+              <p class="card-desc">Shaken with fresh lime juice, a good tequila, and orange liqueur. Salt the rim. Don't skip the fresh lime.</p>
+              <div class="recipe-meta">
+                <span>Serves 1</span>
+                <span class="meta-dot">·</span>
+                <span>5 min</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="breakfast">
+          <a href="recipes/christmas-strada.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Breakfast</span>
+              <h3 class="card-title">Christmas Strada</h3>
+              <p class="card-desc">Assemble the night before, bake while presents are being opened. The reason Christmas morning always smells incredible.</p>
+              <div class="recipe-meta">
+                <span>Serves 8</span>
+                <span class="meta-dot">·</span>
+                <span>Overnight + 55 min</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="breakfast">
+          <a href="recipes/sour-cream-coffee-cake.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Breakfast</span>
+              <h3 class="card-title">Sour Cream Coffee Cake</h3>
+              <p class="card-by">by Ina Garten</p>
+              <p class="card-desc">The streusel-to-cake ratio is exactly right. Perfect for any morning that deserves something special. Maple glaze on top.</p>
+              <div class="recipe-meta">
+                <span>Serves 6–8</span>
+                <span class="meta-dot">·</span>
+                <span>1 hr 15 min</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card" data-category="sides">
+          <a href="recipes/focaccia.html" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Sides</span>
+              <h3 class="card-title">Focaccia</h3>
+              <p class="card-desc">Crisp on the bottom, pillowy inside, dimples pooled with olive oil. Rosemary and flaky salt on top — worth the patience.</p>
+              <div class="card-meta">
+                <span>Serves 8–10</span>
+                <span>~3 hrs</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- ================================
+             COMING SOON
+        ================================= -->
+
+        <article class="recipe-card coming-soon" data-category="mains">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">André's East Coast Paella</h3>
+              <p class="card-by">by André Nicholas Sala</p>
+              <p class="card-desc">André's legendary East Coast paella — the kind of dish that turns a meal into an event.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="mains">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">Fava on Vine Wraps</h3>
+              <p class="card-desc">A family favorite — recipe coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="mains">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">Anna's Fish Tacos</h3>
+              <p class="card-by">by Anna</p>
+              <p class="card-desc">The fish tacos everyone asks Anna to make — recipe coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="mains">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Mains</span>
+              <h3 class="card-title">Steph's Carnitas</h3>
+              <p class="card-by">by Steph</p>
+              <p class="card-desc">Steph's slow-cooked carnitas — recipe coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="sides">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Sides</span>
+              <h3 class="card-title">Ginny's Mac & Cheese</h3>
+              <p class="card-by">by Ginny</p>
+              <p class="card-desc">The mac and cheese that disappears first at every gathering — recipe coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="sides">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Sides</span>
+              <h3 class="card-title">Papi's Potatoes</h3>
+              <p class="card-desc">The side dish everyone asks for the recipe for — coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="sides">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Sides</span>
+              <h3 class="card-title">Thanksgiving Salad</h3>
+              <p class="card-desc">The salad that earns its place at the Thanksgiving table every year — recipe coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="breakfast">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Breakfast</span>
+              <h3 class="card-title">Timpankas</h3>
+              <p class="card-desc">A family breakfast tradition — recipe coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="recipe-card coming-soon" data-category="breakfast">
+          <a href="#" class="card-link">
+            <div class="card-image-wrap">
+              <div class="card-image placeholder-img">
+                <span class="placeholder-text">photo coming soon</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="recipe-category-badge">Breakfast</span>
+              <h3 class="card-title">Buttermilk Pancakes</h3>
+              <p class="card-by">by André, adapted from Smitten Kitchen</p>
+              <p class="card-desc">The original Deb Perelman recipe before it disappeared from the internet and got replaced with bougie versions — recipe coming soon.</p>
+              <p class="coming-soon-note">Recipe coming soon</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-title">Family Recipes</p>
+      <p class="footer-sub">made with love, shared with family</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
